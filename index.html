@@ -1,80 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ОК 😂</title>
+<body style="background:#111;color:white;text-align:center;padding-top:50px">
 
-<style>
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #111, #333);
-    color: white;
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
+<h1>ПРОВЕРКА 🔊</h1>
 
-.box {
-    padding: 35px 25px;
-    width: 85%;
-    max-width: 400px;
-    border-radius: 25px;
-    background: #1d1d1d;
-}
-
-h1 {
-    font-size: 50px;
-}
-
-button {
-    padding: 16px 30px;
-    font-size: 24px;
-    font-weight: bold;
-    border: none;
-    border-radius: 15px;
-}
-
-#text {
-    margin-top: 20px;
-    font-size: 22px;
-}
-</style>
-</head>
-
-<body>
-
-<div class="box">
-    <h1>ОК 😂</h1>
-
-    <p>Ты активировал NFC-метку!</p>
-
-    <button id="btn">НАЖМИ 😈</button>
-
-    <div id="text"></div>
-</div>
-
-<script>
-const audio = new Audio(
-    "./AUD-20260902-WA0043%5B1%5D.mp3"
-);
-
-document.getElementById("btn").addEventListener("click", function() {
-
-    audio.currentTime = 0;
-
-    audio.play().then(() => {
-        document.getElementById("text").textContent = "АХАХАХА 😂";
-    }).catch(() => {
-        document.getElementById("text").textContent =
-            "Нажми ещё раз 🔊";
-    });
-
-});
-</script>
+<button onclick="new Audio('./AUD-20260902-WA0043%5B1%5D.mp3').play()"
+style="font-size:25px;padding:20px">
+▶️ ИГРАТЬ
+</button>
 
 </body>
 </html>
