@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ОК 😂</title>
-
 <style>
 body {
     margin: 0;
@@ -12,39 +11,24 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #111, #333);
+    background: #111;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     text-align: center;
 }
-
 .box {
-    padding: 35px 25px;
-    width: 85%;
+    padding: 30px;
+    width: 80%;
     max-width: 400px;
     border-radius: 25px;
-    background: #1d1d1d;
+    background: #222;
 }
-
-h1 {
-    font-size: 50px;
-    margin: 0 0 15px;
-}
-
-p {
-    font-size: 20px;
-}
-
 button {
-    margin-top: 20px;
     padding: 16px 30px;
-    font-size: 24px;
-    font-weight: bold;
-    border: none;
+    font-size: 22px;
+    border: 0;
     border-radius: 15px;
-    cursor: pointer;
 }
-
 #text {
     margin-top: 20px;
     font-size: 22px;
@@ -53,10 +37,8 @@ button {
 </head>
 
 <body>
-
 <div class="box">
     <h1>ОК 😂</h1>
-
     <p>Ты активировал NFC-метку!</p>
 
     <button onclick="playSound()">НАЖМИ 😈</button>
@@ -69,8 +51,7 @@ function playSound() {
     const audio = new Audio("./AUD-20260902-WA0043.mp3");
     audio.play();
 
-    document.getElementById("text").textContent =
-        "АХАХАХА 😂";
+    document.getElementById("text").textContent = "АХАХАХА 😂";
 }
 </script>
 
