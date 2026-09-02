@@ -1,59 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ОК 😂</title>
-<style>
-body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #111;
-    color: white;
-    font-family: Arial;
-    text-align: center;
-}
-.box {
-    padding: 30px;
-    width: 80%;
-    max-width: 400px;
-    border-radius: 25px;
-    background: #222;
-}
-button {
-    padding: 16px 30px;
-    font-size: 22px;
-    border: 0;
-    border-radius: 15px;
-}
-#text {
-    margin-top: 20px;
-    font-size: 22px;
-}
-</style>
-</head>
-
-<body>
-<div class="box">
-    <h1>ОК 😂</h1>
-    <p>Ты активировал NFC-метку!</p>
-
-    <button onclick="playSound()">НАЖМИ 😈</button>
-
-    <div id="text"></div>
-</div>
-
 <script>
-function playSound() {
-    const audio = new Audio("./AUD-20260902-WA0043.mp3");
+function laugh() {
+    const audio = new Audio("AUD-20260902-WA0043.mp3");
+
     audio.play();
 
-    document.getElementById("text").textContent = "АХАХАХА 😂";
+    document.getElementById("text").textContent =
+        "АХАХАХА 😂";
 }
 </script>
-
-</body>
-</html>
